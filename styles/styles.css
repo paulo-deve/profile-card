@@ -1,0 +1,114 @@
+body {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1rem;
+}
+
+.container {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  min-width: 21rem;
+
+  background: var(--white);
+  border-radius: 1rem;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: -2px 12px 24px -1px rgba(0, 0, 0, 0.56);
+  -webkit-box-shadow: -2px 12px 24px -1px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: -2px 12px 24px -1px rgba(0, 0, 0, 0.56);
+}
+
+.wrapper .avatar {
+  width: 6rem;
+  height: 6rem;
+
+  border: 3px solid var(--white);
+
+  border-radius: 6rem;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: -3.5rem;
+}
+
+.wrapper .avatar img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.wrapper .personal-info {
+  text-align: center;
+}
+
+.wrapper .personal-info strong,
+span {
+  display: block;
+}
+
+.wrapper .personal-info strong > span {
+  display: inline-block;
+
+  font-weight: 400;
+
+  color: var(--gray-500);
+}
+
+.wrapper .personal-info strong {
+  color: var(--gray-900);
+  font-weight: 700;
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.wrapper .personal-info > span {
+  color: var(--gray-500);
+  font-weight: 400;
+
+  margin-bottom: 2rem;
+}
+
+.wrapper .github-info {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  text-align: center;
+
+  padding: 1rem;
+  border-top: 1px solid var(--gray-500);
+}
+
+.wrapper .github-info .git-info span:first-child {
+  color: var(--gray-900);
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.wrapper .github-info .git-info span:last-child {
+  color: var(--gray-500);
+  font-weight: 400;
+  font-size: 0.8rem;
+
+  letter-spacing: 0.1rem;
+}
